@@ -12,23 +12,23 @@ class App extends Component {
             "undecided": {
                 name: "Undecided", players: [],
             },
-            "lakeland": {
-                name: "Lakeland", players: [],
+            "thavnair": {
+                name: "Thavnair", players: [],
             },
-            "kholusia": {
-                name: "Kholusia", players: [],
+            "labyrinthos": {
+                name: "Labyrinthos", players: [],
             },
-            "amarang": {
-                name: "Amh Araeng", players: [],
+            "garlemald": {
+                name: "Garlemald", players: [],
             },
-            "ilmeg": {
-                name: "Il Mheg", players: [],
+            "elpis": {
+                name: "Elpis", players: [],
             },
-            "raktika": {
-                name: "Rak'tika", players: [],
+            "marelamentorum": {
+                name: "Mare Lamentorum", players: [],
             },
-            "tempest": {
-                name: "Tempest", players: [],
+            "ultimathule": {
+                name: "Ultima Thule", players: [],
             }
         }
     }
@@ -40,7 +40,7 @@ class App extends Component {
         console.log(name);
         newState[source.droppableId].players.splice(source.index, 1)
         newState[destination.droppableId].players.splice(destination.index, 0, name);
-        this.setState( newState )    
+        this.setState( newState )
     }
     handleAddPlayer = (event) => {
         if (event.key === 'Enter') {
